@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updown Shoes | La Casa del Flow</title>
+    
+    <!-- Tailwind CSS CDN para un estilo moderno estilo Nike -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Configuración de colores personalizados según tu logo -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#E11D26', // Rojo característico de tu logo
+                        brandDark: '#0B0B0B',
+                        brandCard: '#161616'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Meta Pixel Code (Facebook Pixel) -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // REEMPLAZA 'TU_PIXEL_ID_AQUI' POR TU CÓDIGO DE PIXEL DE FACEBOOK REAL
+      fbq('init', 'TU_PIXEL_ID_AQUI'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=TU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body class="bg-brandDark text-white font-sans antialiased selection:bg-brandRed selection:text-white">
+
+    <!-- NAV BAR -->
+    <nav class="fixed top-0 w-full z-50 bg-brandDark/90 backdrop-blur-md border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <img src="LOGO2.png" alt="Updown Shoes Logo" class="h-12 w-auto object-contain rounded-full">
+                <span class="font-extrabold text-xl tracking-wider uppercase text-white">UPDOWN <span class="text-brandRed">SHOES</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-widest text-neutral-300">
+                <a href="#catálogo" class="hover:text-brandRed transition-colors">Colección</a>
+                <a href="#about" class="hover:text-brandRed transition-colors">La Casa del Flow</a>
+            </div>
+
+            <div class="flex items-center gap-4 text-xl">
+                <a href="https://www.instagram.com/updownshoess?igsh=cXgyYmttN3pxYmxt&utm_source=qr" target="_blank" class="hover:text-brandRed transition-colors" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1BUof5kBHY/?mibextid=wwXIfr" target="_blank" class="hover:text-brandRed transition-colors" title="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20más%20información%20sobre%20sus%20shoes" target="_blank" class="bg-brandRed text-white px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:bg-red-700 transition-all">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Contactar</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden flex items-center min-h-screen">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center z-10">
+            <div>
+                <span class="text-brandRed font-bold tracking-widest uppercase text-sm bg-brandRed/10 px-3 py-1 rounded-full border border-brandRed/20">
+                    LA CASA DEL FLOW
+                </span>
+                <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tight mt-4 mb-6 italic leading-none">
+                    LLEVA EL URBAN STYLE <br><span class="text-brandRed">AL SIGUIENTE NIVEL.</span>
+                </h1>
+                <p class="text-neutral-400 text-lg mb-8 max-w-lg">
+                    Descubre nuestra colección exclusiva de calzado urbano. Diseños icónicos para marcar tendencia a cada paso.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#catalogo" class="bg-brandRed hover:bg-red-700 text-white font-black px-8 py-4 rounded-xl uppercase tracking-wider text-sm transition-all transform hover:-translate-y-1 shadow-lg shadow-brandRed/30">
+                        Ver Colección
+                    </a>
+                    <a href="https://wa.me/1234567890?text=Hola!%20Vengo%20de%20la%20página%20web%20y%20quiero%20consultar%20disponibilidad" target="_blank" class="border border-neutral-700 hover:border-brandRed text-white font-bold px-8 py-4 rounded-xl uppercase tracking-wider text-sm transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg text-emerald-500"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-12 -left-12 w-72 h-72 bg-brandRed/20 rounded-full blur-3xl"></div>
+                <img src="JORDAN1.png" alt="Urban Sneakers" class="rounded-3xl shadow-2xl relative z-10 w-full object-cover aspect-square border border-neutral-800">
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER FLOW -->
+    <section class="bg-brandRed py-4 uppercase font-black tracking-widest text-black text-center text-xl italic overflow-hidden">
+        <div class="whitespace-nowrap animate-pulse">
+            ★ UPDOWN SHOES ★ LA CASA DEL FLOW ★ ENVÍOS Y ATENCIÓN DIRECTA POR WHATSAPP ★
+        </div>
+    </section>
+
+    
+    <section id="catalogo" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black uppercase italic">Nuestra <span class="text-brandRed">Colección</span></h2>
+            <p class="text-neutral-400 mt-2">Los pares más cotizados del streetwear directo a tus pies.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-brandCard rounded-2xl p-4 border border-neutral-800 hover:border-brandRed transition-all group">
+                <div class="overflow-hidden rounded-xl bg-neutral-900 aspect-square mb-4">
+                    <img src="1airmax.jpg" alt="Sneaker Urban 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <h3 class="font-black text-xl uppercase italic">Urban Retro Air</h3>
+                <p class="text-neutral-400 text-sm mb-4">Estilo urbano clásico con máximo confort.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-brandRed font-black text-2xl">$--.--</span>
+                    <a href="https://wa.me/1234567890?text=Hola!%20Me%20interesan%20los%20Urban%20Retro%20Air" target="_blank" class="bg-white text-black hover:bg-brandRed hover:text-white px-4 py-2 rounded-lg font-bold text-xs uppercase tracking-wider transition-colors flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Consultar
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="bg-brandCard rounded-2xl p-4 border border-neutral-800 hover:border-brandRed transition-all group">
+                <div class="overflow-hidden rounded-xl bg-neutral-900 aspect-square mb-4">
+                    <img src="badbo.png" alt="Sneaker Urban 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <h3 class="font-black text-xl uppercase italic">Street High Edition</h3>
+                <p class="text-neutral-400 text-sm mb-4">Diseño de corte alto para destacar en la calle.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-brandRed font-black text-2xl">$--.--</span>
+                    <a href="https://wa.me/1234567890?text=Hola!%20Me%20interesan%20los%20Street%20High%20Edition" target="_blank" class="bg-white text-black hover:bg-brandRed hover:text-white px-4 py-2 rounded-lg font-bold text-xs uppercase tracking-wider transition-colors flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Consultar
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="bg-brandCard rounded-2xl p-4 border border-neutral-800 hover:border-brandRed transition-all group">
+                <div class="overflow-hidden rounded-xl bg-neutral-900 aspect-square mb-4">
+                    <img src="traviscott.png" alt="Sneaker Urban 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <h3 class="font-black text-xl uppercase italic">Red Flow Special</h3>
+                <p class="text-neutral-400 text-sm mb-4">El color de la casa. Edición en rojo vibrante.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-brandRed font-black text-2xl">$--.--</span>
+                    <a href="https://wa.me/1234567890?text=Hola!%20Me%20interesan%20los%20Red%20Flow%20Special" target="_blank" class="bg-white text-black hover:bg-brandRed hover:text-white px-4 py-2 rounded-lg font-bold text-xs uppercase tracking-wider transition-colors flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Consultar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & REDES -->
+    <footer class="border-t border-neutral-800 bg-black py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <img src="LOGO2.png" alt="Logo" class="h-10 w-auto rounded-full">
+                <span class="font-extrabold uppercase tracking-widest text-sm">Updown Shoes • La Casa del Flow</span>
+            </div>
+
+            <div class="flex gap-6 text-2xl">
+                <a href="https://www.instagram.com/updownshoess?igsh=cXgyYmttN3pxYmxt&utm_source=qr" target="_blank" class="hover:text-brandRed transition-colors">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1BUof5kBHY/?mibextid=wwXIfr" target="_blank" class="hover:text-brandRed transition-colors">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" class="hover:text-emerald-500 transition-colors">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <p class="text-neutral-600 text-xs">
+                © 2026 Updown Shoes. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
